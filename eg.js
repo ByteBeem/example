@@ -12,7 +12,7 @@ async function capturePostRequests(url) {
     if (request.method() === 'POST') {
       // Log POST request information
       console.log(`POST Request URL: ${request.url()}`);
-      console.log(`POST Request Headers: ${JSON.stringify(request.headers(), null, 2)}`);
+      console.log(`POST Request Headers: ${JSON.stringify(request, null, 2)}`);
       console.log(`POST Request Payload: ${JSON.stringify(request.postData(), null, 2)}`);
     }
 
